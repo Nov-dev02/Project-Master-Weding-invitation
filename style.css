@@ -196,7 +196,7 @@ body {
  }
 
 .home h3 {
-  color: #444;
+  color: #000000;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -675,30 +675,33 @@ transition: 0.2 ease;
      color: #ffffff; 
      font-size: 1.8rem;
    }
-  .container h5 {
+  .Sosial .container h5 {
+    text-align: center;
     position: relative;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      position: relative;
      color:#ffff;
-     top: 300px;
+     top: 30px;
    }
    .container  a2 {
+    text-align: center;
     position: relative;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      position: relative;
      color: #b0abab; 
-     top:320px;
+     top:30px;
    }
    
    
    .container h4 {
+    text-align: center;
      position: relative;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      font-size: 2rem;
      color: #028f8f;
      margin: 0;
      padding: 0;
-     top: 400px;
+     top: 40px;
      font-weight: bold;
    }
    
@@ -774,7 +777,9 @@ transition: 0.2 ease;
     background: #a2a2a258;
     margin-top: -5px;
    }
-   .container .box .content p {
+   .container .box .content p { 
+    position: relative;
+    font-family: monospace;
     color: rgb(221, 221, 221);
     text-align: center;
     font-size: 0.9rem;
@@ -967,15 +972,41 @@ footer li {
 /**
    * Wrapper
    */
+    
+    
   
    
-   .wrapper {
-    display: inline-flex;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
+   .Sosial .container {
+    padding: 50px;
+    position: relative;
+    z-index: 1000;
+    margin-top: 200px;
+    border-radius: 20px;
+    min-height: 30vh;
+    padding: 10px;
+    height: 40%;
+    width: 40%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 25px 45px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    overflow: hidden;
+    backdrop-filter: blur(25px);
    }
-   .wrapper .icon {
+    .Sosial .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -40%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      pointer-events: none;
+      transform: skew(-20deg);
+    }
+    
+   .Sosial .icon {
     position: relative;
     background: #ffff;
     border-radius: 50%;
@@ -990,10 +1021,11 @@ footer li {
     flex-direction: column;
     box-shadow: 0 10px 10x rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    top: 450px;
+    top: 80px;
     transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
    }
-   .wrapper .name {
+   .Sosial .name {
     position: absolute;
     top: 0;
     font-size: 14px;
@@ -1006,7 +1038,7 @@ footer li {
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
    }
-   .wrapper .name::before {
+  .Sosial .name::before {
     position: absolute;
     content: "";
     height: 8px;
@@ -1017,28 +1049,28 @@ footer li {
     transform: translate(-50%) rotate(45deg);
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
    }
-   .wrapper .icon:hover .name {
+    .Sosial .icon:hover .name {
     top: -45px;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
    }
-   .wrapper .icon:hover span,
-   .wrapper .icon:hover .name {
+   .Sosial  .icon:hover span,
+   .Sosial  .icon:hover .name {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
    }
-   .wrapper .facebook:hover,
-   .wrapper .facebook:hover .name,
-   .wrapper .facebook:hover .name::before {
+   .Sosial .facebook:hover,
+   .Sosial .facebook:hover .name,
+   .Sosial .facebook:hover .name::before {
     background: #1877f2;
     color: #ffffff;
    }
-   .wrapper .instagram.hover .name::before {
+   .Sosial .instagram.hover .name::before {
     background: #ffa724;
     color: #ffffff;
    }
-   .wrapper .instagram:hover,
-   .wrapper .instagram:hover .name {
+   .Sosial  .instagram:hover,
+   .Sosial .instagram:hover .name {
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%,
     #fdf497 0%,
@@ -1048,43 +1080,43 @@ footer li {
     #285aeb 90%
     );
    }
-   .wrapper .github:hover,
-   .wrapper .github:hover .name,
-   .wrapper .github:hover .name::before {
+   .Sosial .github:hover,
+   .Sosial .github:hover .name,
+   .Sosial .github:hover .name::before {
     background: #333333;
     color: #ffffff;
    }
-   .wrapper .youtube:hover,
-   .wrapper .youtube:hover .name,
-   .wrapper .youtube:hover .name::before {
+   .Sosial  .youtube:hover,
+   .Sosial  .youtube:hover .name,
+   .Sosial .youtube:hover .name::before {
     background: #cd201f;
     color: #ffffff;
    }
-   .wrapper .tiktok:hover,
-   .wrapper .tiktok:hover .name,
-   .wrapper .tiktok:hover .name::before {
+   .Sosial .tiktok:hover,
+   .Sosial  .tiktok:hover .name,
+   .Sosial  .tiktok:hover .name::before {
     background: #333333;
     color: #ffffff;
    }
-   .wrapper .whatsapp:hover,
-   .wrapper .whatsapp:hover .name,
-   .wrapper .whatsapp:hover .name::before {
+   .Sosial .whatsapp:hover,
+   .Sosial .whatsapp:hover .name,
+   .Sosial .whatsapp:hover .name::before {
     background: #25d366;
     color: #ffffff;
    }
-   .wrapper i {
-    color: #333333;
+   .Sosial  i {
+    color: #0e045d;
    }
-   .wrapper i:hover {
+   .Sosial  i:hover {
     color: #ffffff;
    }
 
  /**
    * Wrapper-End
    */
+s
 
-
-@keyframes rotating {
+ {
   from {
     transform: rotate(0);
   }
